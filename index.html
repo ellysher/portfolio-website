@@ -160,6 +160,14 @@
              margin: 10px auto; /* Centers the profile picture */
         }
 		
+		video {
+    		max-width: 100%;
+    		height: auto;
+    		display: block;
+    		margin: 0 auto;
+    		border-radius: 10px; /* Optional: Adds rounded corners */
+    		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Adds a shadow */
+		}
 		
 	
 		hr {
@@ -329,22 +337,42 @@
             
 
 			<li>
-				<a href="#" style="text-decoration: none">Image Segmentation for Brain Tumor Detection in MRI Images</a>
-				<p>Built an image segmentation model using the U-net architecture to assist in medical diagnosis by 
-					identifying regions of interest in medical images specifically detecting brain tumors in MRI scans. 
+				<h2> Image Segmentation for Brain Tumor Detection in MRI Images</h2>
+				<p> I developed and deployed a deep learning-powered web application for brain tumor classification using the EfficientNetB3
+					model, achieving an accuracy of 99.54% on a dataset comprising pituitary, meningioma, glioma, and non-tumor cases.
+					I integrated the model into a Flask-based web app, allowing users to upload MRI images for real-time predictions with
+					confidence scores. The application is hosted on an AWS EC2 instance for live testing, showcasing my expertise in deep
+					learning, model deployment, and cloud infrastructure.
 				</p>
-				<img src="image/image_name" alt="Project Picture">
-			    <a href="#" target="_blank" class="button">View Project</a>
+				<img src="images\brain tumor detection image.png" alt="Project Picture">
+			    <a href="https://github.com/ellysher/BRAIN-TUMOR-DETECTION" target="_blank" class="button">View Project Code</a>
+			</li>
+
+
+			<li>
+				<h2> Football Analysis using YOLO</h2>
+				<p> This project focuses on detecting and tracking players, referees, and footballs in match footage using YOLO model.
+					To enhance accuracy, I trained the model further on a custom football dataset, and used K-means clustering
+					for team classification based on jersey colors. The system analyzes ball possession percentages and utilizes
+					optical flow to measure camera movement, ensuring precise player tracking. I implemented perspective transformation to
+					convert pixel-based movement into real-world distances, enabling accurate calculations of player speed and distance covered.
+				</p>
+				
+				<video  controls>
+					<source src="images/football analysis.mp4" type="video/mp4">
+					Your browser does not support the video tag.
+				</video>
+			    <a href="https://github.com/ellysher/YOLO-FOOTBALL-ANALYSIS" target="_blank" class="button">View Project Code</a>
 			</li>
 		</ul>
 
 		<!-- Machine Learning Projects -->
-        <h2>DEEP LEARNING</h2>
+        
         <ul>
-			<h3>Convolutional Neural Networks</h3>
+			
             <li>
-                Image Recognition using pre-trained ResNet-101
-                <a href="#" style="text-decoration: none"> ➲</a>
+                <h2>Image Recognition using pre-trained ResNet-101</h2>
+                
 				<p> This project is an end-to-end image recognition webb application
 					built using Flask and pytorch. It utilizes a pre-trained ResNet-101 model with
 					ImageNet weights to classify images into 1,000 categories, including animals, objects, and scenes. 
@@ -354,6 +382,7 @@
 					with Bootstrap styling. I have deployed the app on Heroku cloud platfor to showcase the integration of
 					machine learning with web technologies for real world use cases.
 				</p>
+				
 				<img src="images/image_recognition_app.png" alt="Project Picture">
 				<a href="#" target="_blank" class="button">View Project</a>
             </li>
